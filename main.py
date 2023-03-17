@@ -1,6 +1,4 @@
-import random
 import typing as t
-import math
 
 challenge_input_lines = []
 with open("input.txt") as f:
@@ -16,7 +14,7 @@ for i in [challenge_input_lines[i:i + 2] for i in range(0, len(challenge_input_l
 
 def main():
     for input, res in inputs:
-        print(math.trunc(challenge(input) * 100), res)
+        print(int(challenge(input) * 100), res)
 
 # --------------------------------
 
